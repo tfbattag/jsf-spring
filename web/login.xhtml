@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<head><title>LOGIN page</title></head>
+<body>
+
+<f:view>
+    <form action="../j_spring_security_check" method="post">
+        <h:panelGrid columns="2">
+            <h:outputText value="Username" />
+            <h:inputText id="j_username" />
+            <h:outputText value="Password" />
+            <h:inputSecret id="j_password" />
+        </h:panelGrid>
+
+        <div class="submit">
+            <button type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+                <span class="ui-button-text">Login</span>
+            </button>
+        </div>
+    </form>
+</f:view>
+
+</body>
+</html>
